@@ -6,6 +6,7 @@ before_script:
   - wget https://raw.github.com/selectel/supload/master/supload.sh
   - chmod +x supload.sh
   - npm install
+  - npm install lunr-hugo
 
 script: 
   - npm run index
