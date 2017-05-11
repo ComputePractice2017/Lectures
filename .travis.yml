@@ -1,0 +1,13 @@
+language: node_js
+
+before_script:
+  - wget https://github.com/spf13/hugo/releases/download/v0.20.7/hugo_0.20.7_Linux-64bit.deb
+  - sudo dpkg -i hugo_0.20.7_Linux-64bit.deb
+  - wget https://raw.github.com/selectel/supload/master/supload.sh
+  - chmod +x supload.sh
+  - npm install
+
+script: 
+  - npm run script
+  - hugo
+  - ./supload.sh -u ${USERNAME} -k ${USERKEY} -r ${STORAGE_DIR} public/
