@@ -2,6 +2,7 @@ baseURL = "http://djbelyak.ru/ComputePractice2017"
 languageCode = "ru-ru"
 title = "Лекции по вычислительной практике"
 theme = "hugo-theme-learn"
+publishdir = "public/ComputePractice2017"
 
 [params]
     autoNav = true
