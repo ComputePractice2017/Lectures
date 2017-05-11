@@ -8,6 +8,6 @@ before_script:
   - npm install
 
 script: 
-  - npm run script
+  - npm run index
   - hugo
   - ./supload.sh -u ${USERNAME} -k ${USERKEY} -r ${STORAGE_DIR} public/
