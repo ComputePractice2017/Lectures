@@ -10,5 +10,5 @@ before_script:
 
 script: 
   - npm run index
-  - hugo
+  - hugo -t hugo-theme-learn
   - ./supload.sh -u ${USERNAME} -k ${USERKEY} -r ${STORAGE_DIR} public/
